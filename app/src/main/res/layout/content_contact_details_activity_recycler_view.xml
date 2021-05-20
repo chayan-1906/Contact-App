@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    android:orientation="vertical">
+
+    <LinearLayout
+	android:layout_width="match_parent"
+	android:layout_height="0dp"
+	android:layout_weight="1.5"
+	android:gravity="bottom"
+	android:padding="20dp"
+	android:orientation="vertical">
+
+	<ImageView
+	    android:id="@+id/imageViewContact"
+	    android:layout_width="70dp"
+	    android:layout_height="70dp"
+	    android:layout_gravity="left"
+	    android:layout_marginTop="10dp"
+	    android:src="@drawable/contact_image"/>
+
+	<TextView
+	    android:id="@+id/txtContactName_recycler"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:text="@string/txt_contact_name"
+	    android:textSize="25sp"
+	    android:textColor="#000000"
+	    android:textStyle="bold"/>
+
+	<LinearLayout
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:gravity="bottom"
+	    android:orientation="vertical">
+
+	    <TextView
+		android:id="@+id/txtCompanyName_recycler"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:textSize="15sp"
+		android:textColor="#000000"
+		android:textStyle="bold" />
+
+	    <TextView
+		android:id="@+id/txtTitleName_recycler"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:textSize="15sp"
+		android:textColor="#000000"
+		android:textStyle="bold" />
+
+	</LinearLayout>
+
+    </LinearLayout>
+
+    <View
+	android:layout_width="match_parent"
+	android:layout_height="2dp"
+	android:layout_marginLeft="5dp"
+	android:layout_marginRight="5dp"
+	android:background="#c0c0c0"/>
+
+    <ScrollView
+	android:layout_width="match_parent"
+	android:layout_height="0dp"
+	android:layout_weight="2"
+	android:layout_marginTop="10dp">
+
+	<LinearLayout
+	    android:layout_width="match_parent"
+	    android:layout_height="0dp"
+	    android:layout_weight="2"
+	    android:padding="20dp"
+	    android:orientation="vertical">
+
+	    <LinearLayout
+		android:id="@+id/linearLayoutPhone_1_recycler"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:orientation="horizontal">
+
+		<TextView
+		    android:id="@+id/txtPhone_1_recycler"
+		    android:layout_width="0dp"
+		    android:layout_height="wrap_content"
+		    android:layout_weight="4"
+		    android:text="0123456789"
+		    android:textSize="20sp"
+		    android:textStyle="bold"
+		    android:textColor="#000000"
+		    android:visibility="gone"/>
+
+		<ImageView
+		    android:id="@+id/imageViewPhone_1_recycler"
+		    android:layout_width="0dp"
+		    android:layout_height="wrap_content"
+		    android:layout_weight="1"
+		    android:src="@android:drawable/sym_action_call"
+		    android:visibility="gone"/>
+
+		<ImageView
+		    android:id="@+id/imageViewSMS_1_recycler"
+		    android:layout_width="0dp"
+		    android:layout_height="wrap_content"
+		    android:layout_weight="1"
+		    android:src="@android:drawable/sym_action_chat"
+		    android:visibility="gone"/>
+
+	    </LinearLayout>
+
+	    <LinearLayout
+		android:id="@+id/linearLayoutVideoCall_recycler"
+		android:layout_width="match_parent"
+		android:layout_height="0dp"
+		android:layout_weight="1"
+		android:layout_marginTop="10dp"
+		android:orientation="horizontal"
+		android:visibility="gone">
+
+		<TextView
+		    android:layout_width="0dp"
+		    android:layout_height="wrap_content"
+		    android:layout_weight="4"
+		    android:text="@string/txt_video_call"
+		    android:textStyle="bold"
+		    android:textColor="#000000"
+		    android:textSize="20sp" />
+
+		<ImageView
+		    android:layout_width="0dp"
+		    android:layout_height="40dp"
+		    android:layout_weight="1"
+		    android:src="@drawable/img_video_call" />
+
+	    </LinearLayout>
+
+	    <LinearLayout
+		android:id="@+id/linearLayoutEmail_1_recycler"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="10dp"
+		android:orientation="horizontal">
+
+		<TextView
+		    android:id="@+id/txtEmail_1_recycler"
+		    android:layout_width="0dp"
+		    android:layout_height="wrap_content"
+		    android:layout_weight="4"
+		    android:text="abcd@gmail.com"
+		    android:textSize="20sp"
+		    android:textStyle="bold"
+		    android:textColor="#000000"
+		    android:visibility="gone"/>
+
+	    </LinearLayout>
+
+	</LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>
